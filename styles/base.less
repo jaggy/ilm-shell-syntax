@@ -2,7 +2,7 @@
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
-  color: @syntax-text-color;
+  color: @white;
 
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
@@ -55,6 +55,7 @@ atom-text-editor .search-results .marker .region,
 :host .search-results .marker .region {
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
+  color: @white;
 }
 
 atom-text-editor .search-results .marker.current-result .region,
@@ -70,11 +71,11 @@ atom-text-editor .search-results .marker.current-result .region,
   color: @purple;
 
   &.control {
-    color: @purple;
+    color: @green;
   }
 
   &.operator {
-    color: @syntax-text-color;
+    color: @light-orange;
   }
 
   &.other.special-method {
@@ -87,7 +88,11 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .storage {
-  color: @purple;
+  color: @yellow;
+
+  &.type {
+    font-weight: 700;
+  }
 }
 
 .constant {
@@ -111,7 +116,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .variable {
-  color: @red;
+  color: @blue;
 
   &.interpolation {
     color: darken(@red, 10%);
@@ -128,7 +133,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @green;
+  color: @orange;
 
 
   &.regexp {
@@ -150,8 +155,11 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @light-gray;
     }
 
+    &.variable {
+        color: @blue;
+    }
+
     &.string,
-    &.variable,
     &.parameters,
     &.array {
       color: @syntax-text-color;
@@ -185,7 +193,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.function  {
-    color: @cyan;
+    color: @lavender;
 
     &.any-method {
       color: @blue;
@@ -195,18 +203,17 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .entity {
   &.name.function {
-    color: @blue;
-  }
-  &.name.type {
-    color: @light-orange;
-    text-decoration: underline;
+    color: @teal;
   }
 
   &.other.inherited-class {
     color: @green;
   }
-  &.name.class, &.name.type.class {
-    color: @light-orange;
+
+  &.name.type,
+  &.name.class,
+  &.name.type.class {
+    color: @purple;
   }
 
   &.name.section {
@@ -214,15 +221,14 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.tag {
-    color: @red;
-    text-decoration: underline;
+    color: @teal;
   }
 
   &.other.attribute-name {
-    color: @orange;
+    color: @yellow;
 
     &.id {
-      color: @blue;
+      color: @red;
     }
   }
 }
