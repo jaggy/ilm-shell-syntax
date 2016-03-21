@@ -1,13 +1,13 @@
 {
-  "name": "ilm-shell.git",
+  "name": "ilm-shell-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "ILM Shell Sublime Theme for Atom",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/ilm-shell.git",
+  "repository": "https://github.com/atom/ilm-shell-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
