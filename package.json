@@ -1,7 +1,7 @@
 {
   "name": "ilm-shell-syntax",
   "theme": "syntax",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "ILM Shell Sublime Theme for Atom",
   "keywords": [
     "syntax",
